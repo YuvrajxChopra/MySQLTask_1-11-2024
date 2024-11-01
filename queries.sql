@@ -35,7 +35,7 @@ INSERT INTO employees (employee_id, first_name, last_name, manager_id, departmen
 VALUES (7, 'Ajay', 'Verma', NULL, 'Sales', 'ajay@mail.com', '0985432345');  
 
 
-SELECt * from employees
+SELECt * from employees;
 
 
 -- Query 1: Get all employees under manager
