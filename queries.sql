@@ -96,7 +96,6 @@ BEGIN
     SELECT CONCAT(first_name, ' ', last_name) INTO full_name
     FROM employees
     WHERE employee_id = emp_id
-    LIMIT 1; 
     
     RETURN full_name;
 END$$
