@@ -1,4 +1,4 @@
---Creating table
+-- Creating table
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -71,7 +71,7 @@ FROM employees e
 JOIN employees m ON e.manager_id = m.employee_id;
 
 
---Query 4: Find employees who have no manager
+-- Query 4: Find employees who have no manager
 SELECT 
     e.employee_id,
     e.first_name,
@@ -84,7 +84,7 @@ LEFT JOIN employees m ON e.employee_id = m.manager_id
 WHERE e.manager_id IS NULL AND m.employee_id IS NULL;
 
 
---Query 5: Create a function to get the full name of an employee
+-- Query 5: Create a function to get the full name of an employee
 DELIMITER $$
 
 CREATE FUNCTION get_full_names(emp_id INT) 
